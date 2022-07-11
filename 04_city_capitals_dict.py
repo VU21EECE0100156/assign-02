@@ -39,5 +39,12 @@ class Dict_to_list(unittest.TestCase):
     
     self.assertEqual(capital_dict(d1), output)
 
+  def test_02(self):
+    d1={"karnataka":"bangalore","telangana": "hyderabad"}
+    
+    output =["karnataka ->bangalore","telangana ->hyderabad"]
+       
+    self.assertEqual(capital_dict(d1), output)
+
 if __name__ == '__main__':
   unittest.main(verbosity=2)
